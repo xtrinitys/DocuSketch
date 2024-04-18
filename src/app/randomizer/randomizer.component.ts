@@ -27,7 +27,7 @@ export class RandomizerComponent {
     this.taskQueueService.enqueueTask(() => {
       this.icon = this.randomizerService.getRandomIcon();
       this.finishedTasks++;
-    });
+    }, 3000);
   }
 
   @HostListener('document:keyup', ['$event'])
