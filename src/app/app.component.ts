@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RandomizerComponent } from './randomizer/randomizer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [RandomizerComponent],
 })
-export class AppComponent {
-  title = 'docusketch';
-}
+export class AppComponent {}
